@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-City Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+
+        .weather-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        select, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        #weatherResult {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        <select id="citySelector">
+            <option value="alexandria">Alexandria</option>
+            <option value="cairo">Cairo</option>
+            <option value="luxor">Luxor</option>
+            <option value="mecca">Mecca</option>
+            <option value="london">London</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="newyork">New York</option>
+            <option value="sydney">Sydney</option>
+            <option value="dubai">Dubai</option>
+        </select>
+        <button id="getWeather">Get Weather</button>
+        <div id="weatherResult">
+            <p id="weatherDescription"></p>
+            <p id="temperature"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
